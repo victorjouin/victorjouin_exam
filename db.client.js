@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize')
 
 // database
 const sequelize = new Sequelize(
-  'postgres://root:5JBdRQzAZCyEPTcNNTBv6xSHzFql9hVu@dpg-cn29o2n109ks7394i6v0-a.frankfurt-postgres.render.com/root_86w4', // TODO
+  process.env.DATABASE, // TODO
   {
     dialectOptions: {
       ssl: {
