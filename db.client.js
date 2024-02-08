@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize')
 
 // database
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
+  process.env.BASE,
   {
     dialectOptions: {
       ssl: {
